@@ -3,7 +3,7 @@ import ReactDom from 'react-dom'
 import App from './App'
 
 
-function mount(el) {
+export function mount(el) {
     ReactDom.render(
         <App />,
         el

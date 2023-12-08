@@ -16,10 +16,11 @@ const devConfig = {
             template: './public/index.html'
         }),
         new ModuleFederationPlugin({
-            name : "container" , 
-            remotes : {
-                marketing : 'marketing@http://localhost:8081/remoteEntery.js'
-            }
+            name: "container",
+            remotes: {
+                marketing: 'marketing@http://localhost:8081/remoteEntery.js'
+            },
+            shared: ['react', 'react-dom']
         })
     ],
 }

@@ -20,7 +20,8 @@ const devConfig = {
             filename: 'remoteEntery.js',
             exposes: {
                 './MarketingApp': './src/bootstrap'
-            }
+            } , 
+            shared : ['react' , 'react-dom']
         })
     ],
 }
